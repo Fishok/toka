@@ -1,0 +1,211 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@theme {
+  --color-primary: #191A23;
+  --color-secondary: #FFFFFF;
+  --color-default: #D5D8E2;
+
+  --color-grayscale-50: #FAFAFC;
+  --color-grayscale-100: #F0F2F3;
+  --color-grayscale-200: #E1E3E4;
+  --color-grayscale-300: #CACAD0;
+  --color-grayscale-500: #ACACB9;
+  --color-grayscale-700: #5E5E6E;
+  --color-grayscale-800: #5E5E6E;
+
+  --color-naturals-50: #F6F7F9;
+  --color-naturals-100: #ECEDF2;
+  --color-naturals-150: #DBDFE2;
+  --color-naturals-200: #D5DBE2;
+  --color-naturals-300: #AFB4CA;
+  --color-naturals-400: #848CAC;
+  --color-naturals-500: #656D92;
+  --color-naturals-600: #505779;
+  --color-naturals-700: #424762;
+  --color-naturals-800: #393D53;
+  --color-naturals-850: #333647;
+  --color-naturals-900: #2A2C3A;
+  --color-naturals-950: #1B1C27;
+  --color-naturals-1000: #191A23;
+
+  --color-red-50: #FEF2F2;
+  --color-red-100: #FDE6E6;
+  --color-red-200: #FAD1D2;
+  --color-red-300: #F5ACAE;
+  --color-red-400: #EF7D83;
+  --color-red-500: #EE756A;
+  --color-red-600: #E03247;
+  --color-red-700: #AF2137;
+  --color-red-800: #931E33;
+  --color-red-900: #7E1D32;
+
+  --color-orange-50: #FEF5EE;
+  --color-orange-100: #FDE9D7;
+  --color-orange-200: #FACEAE;
+  --color-orange-300: #F7AB7A;
+  --color-orange-400: #F3854E;
+  --color-orange-500: #EF5D20;
+  --color-orange-600: #E04316;
+  --color-orange-700: #BA3114;
+  --color-orange-800: #942918;
+  --color-orange-900: #772417;
+
+  --color-yellow-50: #FEFBE8;
+  --color-yellow-100: #FEF7C3;
+  --color-yellow-200: #FEECA8;
+  --color-yellow-300: #FDDA47;
+  --color-yellow-400: #FAC515;
+  --color-yellow-500: #EAAC08;
+  --color-yellow-600: #CA8404;
+  --color-yellow-700: #A15D07;
+  --color-yellow-800: #85490E;
+  --color-yellow-900: #713C12;
+
+  --color-purple-50: #F7F3FF;
+  --color-purple-100: #EFE9FE;
+  --color-purple-200: #E2D6FE;
+  --color-purple-300: #CBB5FD;
+  --color-purple-400: #AD8BFA;
+  --color-purple-500: #8B5CF6;
+  --color-purple-600: #713AED;
+  --color-purple-700: #5E28D9;
+  --color-purple-800: #4E21B6;
+  --color-purple-900: #421D95;
+
+  --color-green-50: #F0F9F4;
+  --color-green-100: #DCEFE2;
+  --color-green-200: #BBDFC9;
+  --color-green-300: #8EC7A8;
+  --color-green-400: #6EB290;
+  --color-green-500: #3C8D67;
+  --color-green-600: #2B7052;
+  --color-green-700: #225A42;
+  --color-green-800: #1D4836;
+  --color-green-900: #193B2D;
+
+  --color-blue-50: #f0f5fd;
+  --color-blue-100: #e3edfc;
+  --color-blue-200: #cddcf8;
+  --color-blue-300: #afc4f2;
+  --color-blue-400: #8ea5eb;
+  --color-blue-500: #7385e1;
+  --color-blue-600: #5f6ad5;
+  --color-blue-700: #4850ba;
+  --color-blue-800: #3d4596;
+  --color-blue-900: #373e78;
+
+
+  --font-size-2xs: 10px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-display-sm: 20px;
+  --font-size-display-md: 24px;
+  --font-size-display-lg: 28px;
+
+
+  --line-height-2xs: 0.625rem;
+  --line-height-xs: 0.75rem;
+  --line-height-sm: 0.875rem;
+  --line-height-md: 1rem;
+  --line-height-lg: 1.125rem;
+  --line-height-display-sm: 1.25rem;
+  --line-height-display-md: 1.5rem;
+  --line-height-display-lg: 1.75rem;
+
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-family-geist: 'Geist', 'sans-serif';
+
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@layer base {
+  html {
+    font-family: 'Geist', sans-serif;
+  }
+
+  body{
+    margin: 0;
+  }
+
+  #root{
+    background: #191A23 url('./shared/images/system_background.svg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 8px 8px 8px 0;
+    box-sizing: border-box;
+  }
+}
+
